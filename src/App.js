@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './Components/Card';
+import "bootstrap/dist/css/bootstrap.min.css"
+import Formulario from "./Components/Formulario";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Card
+        titulo="Mortal Kombat"
+        imagen="https://imagenes.milenio.com/zZmiS3PZPdNpjZfjoZ_rv4S0kvA=/936x566/https://www.milenio.com/uploads/media/2021/02/18/estrenan-trailer-pelicula-mortal-kombat.jpg"
+        descripcion='Mortal Kombat is a mysterious, intergalactic tournament of ancient martial arts. Shaolin Monk Liu Kang, from Earth, gets invited as a competitor.'
+        puntaje="Puntaje: 5/5"
+      />
+      <Formulario />
     </div>
+
   );
 }
 
